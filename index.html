@@ -36,7 +36,7 @@
                   <div class="divider"></div>
 
                 <!-- add money start -->
-                <div id="cash-add-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-add-from" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         
@@ -120,11 +120,33 @@
 
 
                  <!-- Pay Bill start -->
-                 
+                 <div id="cash-bill-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                       <label class="label">
+                        <span class="label-text">Biller Account Number</span>
+                      </label>
+                      <input id="inpit-number" type="text" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                      <label class="label">
+                        <span class="label-text">Amount to Pay</span>
+                      </label>
+                      <input id="input-bill" type="text" placeholder="Add Amount to Pay" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="input-pin-bill" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-bill" class="btn btn-warning">Pay Bill</button>
+                    </div>
+                  </form>
+                </div>
                  <!-- Pay Bill end -->
 
                  <!-- Get Bonus start  -->
-                 <div id="cash-Bonus-from" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="cash-Bonus-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body">
                     <div class="form-control">
                       <label class="label">

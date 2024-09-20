@@ -18,6 +18,6 @@ document.getElementById('Get-Bonus').addEventListener('click', function(){
     showSectionById('cash-Bonus-from');
 })
 
-document.getElementById('Get-Bill').addEventListener('click', function(){
+document.getElementById('Pay-Bill').addEventListener('click', function(){
     showSectionById('cash-bill-from');
 })

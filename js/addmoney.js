@@ -27,7 +27,7 @@ if(pinNumber === 1234){
     div.classList.add('p-4')
     div.innerHTML = `
     <h4 class="text-2xl font-bold">Cash add</h4>
-    <p>Added new Balance</p>
+    <p>${addMoney}Added new Balance ${newBalance}</p>
     `
     // console.log(p);
     document.getElementById('transfer-container').appendChild(div);
