@@ -9,3 +9,15 @@ document.getElementById('cash-out').addEventListener('click', function(){
 document.getElementById('transfer-input').addEventListener('click', function(){
     showSectionById('transfer-from');
 })
+
+document.getElementById('Transfer-money').addEventListener('click', function(){
+    showSectionById('cash-Transfer-from');
+})
+
+document.getElementById('Get-Bonus').addEventListener('click', function(){
+    showSectionById('cash-Bonus-from');
+})
+
+document.getElementById('Get-Bill').addEventListener('click', function(){
+    showSectionById('cash-bill-from');
+})

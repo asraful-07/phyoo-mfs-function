@@ -8,10 +8,10 @@ const pinNumber = getInputFieldValueById('input-pin');
 // console.log('add money with parameter', addMoney, pinNumber);
 
 // **********
-if(isNaN(cashOut)){
-    alert('Failed to cash out');
-    return;
-}
+// if(isNaN(cashOut)){
+//     alert('Failed to cash out');
+//     return;
+// }
 // **********
 
 if(pinNumber === 1234){
@@ -21,10 +21,16 @@ if(pinNumber === 1234){
     document.getElementById('account-balance').innerText = newBalance;
     
     // add to transaction history
-    const p = document.createElement('p');
-    p.innerText = `Added: ${addMoney} TK. New Balance: ${newBalance}`
+    const div = document.createElement('div');
+    div.classList.add('bg-yellow-300')
+    div.classList.add('m-2')
+    div.classList.add('p-4')
+    div.innerHTML = `
+    <h4 class="text-2xl font-bold">Cash add</h4>
+    <p>Added new Balance</p>
+    `
     // console.log(p);
-    document.getElementById('transfer-container').appendChild(p);
+    document.getElementById('transfer-container').appendChild(div);
 }
 else{
     alert('pleas try agin!')

@@ -17,7 +17,10 @@ document.getElementById('btn-out').addEventListener('click', function(event){
          
         // add to transaction history
         const div = document.createElement('div');
-        div.classList.add('bg-yellow-400');
+        div.classList.add('bg-yellow-300');
+        div.classList.add('p-4');
+        div.classList.add('m-2')
+
         div.innerHTML = `
         <h4 class="text-2xl font-bold">Cash Out</h4>
         <p>${cashOut} withdraw new Balance ${newBalances}</p>

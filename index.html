@@ -25,16 +25,26 @@
                   <div class="divider"></div>
 
                   <!-- add the button -->
-                 <div>
+                 <div class="grid grid-cols-3 gap-2">
                     <button id="add-money" class="btn btn-outline btn-success">Add Money</button>
                     <button id="cash-out" class="btn btn-outline btn-error">Cash Out</button>
+                    <button id="Transfer-money" class="btn btn-outline">Transfer Cash</button>
+                    <button id="Get-Bonus" class="btn btn-outline btn-primary">Get Bonus</button>
+                    <button id="Pay-Bill" class="btn btn-outline btn-secondary">Pay Bill</button>
                     <button id="transfer-input" class="btn btn-outline btn-info">Transfer</button>
                  </div>
                   <div class="divider"></div>
+
                 <!-- add money start -->
-                <div id="cash-add-from" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-add-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
+                        
+                      <label class="label">
+                        <span class="label-text">Bank Account Number</span>
+                      </label>
+                      <input id="inpit-number" type="text" placeholder="Enter 11 digit number" class="input input-bordered" required />
+
                         <label class="label">
                           <span class="label-text">Amount to Add</span>
                         </label>
@@ -57,6 +67,12 @@
                  <div id="cash-out-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body">
                     <div class="form-control">
+                      
+                      <label class="label">
+                        <span class="label-text">User Account Number</span>
+                      </label>
+                      <input id="inpit-number" type="text" placeholder="Enter 11 digit number" class="input input-bordered" required />
+
                       <label class="label">
                         <span class="label-text">Amount to out</span>
                       </label>
@@ -66,7 +82,7 @@
                       <label class="label">
                         <span class="label-text">Pin Number</span>
                       </label>
-                      <input id="input-pin-out" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                      <input id="input-pin-out" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />                  
                     </div>
                     <div class="form-control mt-6">
                       <button id="btn-out" class="btn btn-warning">Out Money</button>
@@ -75,10 +91,64 @@
                 </div>
                  <!-- cash out end-->
 
+
+                 <!-- Transfer Money start -->
+                 <div id="cash-Transfer-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                       <label class="label">
+                        <span class="label-text">User Account Number</span>
+                      </label>
+                      <input id="inpit-number" type="text" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                      <label class="label">
+                        <span class="label-text">Amount to Transfer</span>
+                      </label>
+                      <input id="input-Transfer" type="text" placeholder="Add Amount to Transfer" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="input-pin-Transfer" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-Transfer" class="btn btn-warning">Send Now</button>
+                    </div>
+                  </form>
+                </div>
+                 <!-- Transfer Money end -->
+
+
+                 <!-- Pay Bill start -->
+                 
+                 <!-- Pay Bill end -->
+
+                 <!-- Get Bonus start  -->
+                 <div id="cash-Bonus-from" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Enter Bonus coupon</span>
+                      </label>
+                      <input id="input-Bonus" type="text" placeholder="Enter your coupon" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="input-pin-Bonus" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-Bonus" class="btn btn-warning">Get Bonus</button>
+                    </div>
+                  </form>
+                </div>
+                 <!-- Get Bonus end -->
+
+
                  <!-- Transfer Money start-->
-                  <div id="transfer-from" class="text-red-600 hidden">
-                    <h3>hi</h3>
-                    <h3>hello</h3>
+                  <div id="transfer-from" class="hidden space-y-3 p-4">
+                    <h3 class="text-3xl font-bold">Transfer History</h3>
                   <div id="transfer-container">
 
                   </div>
@@ -95,6 +165,9 @@
      <script src="./js/addmoney.js"></script>
      <script src="./js/cash-out.js"></script>
      <script src="./js/featur.js"></script>
+     <script src="./js/Transfer.js"></script>
+     <script src="./js/Bonus.js"></script>
+     <script src="./js/pay.js"></script>
      <!-- <script src="./js/end.js"></script> -->
 </body>
 </html>
