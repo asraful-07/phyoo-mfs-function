@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy aunty -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <main class="flex justify-center">
+       <div class="artboard phone-4 shadow-xl">
+        <div class="text-xl font-bold text-purple-600 m-6">
+            <h1>Programming Expenses Assistant</h1>
+        </div>
+       <div class="flex justify-evenly items-center">
+        <button id="btn-click" class="btn btn-outline btn-secondary">Assistant</button>
+        <button id="btn-h" class="btn btn-outline btn-primary">History</button>
+       </div>
+              
+    <div id="input-from" class="p-3">
+        <input type="text"placeholder="income"
+     class="input input-bordered input-primary w-full max-w-xs" />
+      <div class="flex gap-2 my-3">
+        <input type="text"placeholder="software"
+        class="input input-bordered input-primary w-full max-w-xs" />
+        <input type="text"placeholder="courese"
+        class="input input-bordered input-primary w-full max-w-xs" />
+      </div>
+      <input type="text"placeholder="internet"
+      class="input input-bordered input-primary w-full max-w-xs" />
+
+      <button class="btn btn-primary w-full mt-6">Primary</button>
+      
+<!-- savings -->
+        <div class="my-6">
+            <input type="text"placeholder="savings"
+            class="input input-bordered input-primary w-full max-w-xs" />
+        </div>
+    </div>
+
+        <!-- history -->
+         <div id="hrstory-from"  class="hidden">
+            <h1 class="text-4xl font-bold m-4">Result Summary</h1>
+         </div>
+    </main>
+    <script src="./js/pratis.js"></script>
+   <script>
+  document.getElementById('btn-click').addEventListener('click', function(event){
+    event.preventDefault();
+   document.getElementById('input-from').classList.remove('hidden')
+   document.getElementById('hrstory-from').classList.add('hidden')
+  })
+
+  document.getElementById('btn-h').addEventListener('click', function(event){
+    event.preventDefault();
+   document.getElementById('hrstory-from').classList.remove('hidden')
+   document.getElementById('input-from').classList.add('hidden')
+  })
+   </script>
+</body>
+</html>
