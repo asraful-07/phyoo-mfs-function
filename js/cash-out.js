@@ -3,12 +3,12 @@ document.getElementById('btn-out').addEventListener('click', function(event){
     const cashOut = getInputFieldValueById('input-cash-out');
     const pinNumber = getInputFieldValueById('input-pin-out');
     
-// **********
+// ********
     if(isNaN(cashOut)){
         alert('Failed to cash out');
         return;
     }
-// **********
+// ********
 
     if(pinNumber === 1234){
         const balances = getTextFieldValueId('account-balance');
